@@ -44,12 +44,23 @@ const TypoButtons = () => {
                 </div>
             </Box>
 
-            <Stack direction={"row"} mt={4} spacing={2} justifyContent={"center"} >
+            <Stack 
+                direction={"row"} 
+                mt={4} 
+                rowGap={2} 
+                columnGap={1}
+                justifyContent={"center"} 
+                flexWrap={"wrap"}
+            >
                 <Button variant='text'>Text</Button>
-                <Button variant='contained'color='secondary'>Contained</Button>
+                <Button variant='contained' color='secondary'>Contained</Button>
                 <Button variant='outlined' color='error'>Outlined</Button>
                 <Button variant='outlined' color='success'>Outlined</Button>
                 <Button variant='outlined' color='warning'>Outlined</Button>
+                <Button variant='contained' sx={{backgroundColor: "#bede", color: "black"}} >Contained</Button>
+                {/* previous one can be done with theme settings */}
+
+                <Button variant='contained' sx={{backgroundColor: "error.main"}} >Contained</Button>
             </Stack>
         </>
     )
