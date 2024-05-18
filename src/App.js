@@ -5,6 +5,7 @@ import { deepOrange, deepPurple, teal } from "@mui/material/colors";
 function App() {
 
   const theme = createTheme({
+    
     palette: {
       primary: {
         main: deepOrange[500],
@@ -18,6 +19,13 @@ function App() {
         dark: deepPurple["A400"],
       },
     },
+
+    breakpoints: {
+      values: {
+        sm: "650",
+      },
+    },
+
   });
 
   return (
