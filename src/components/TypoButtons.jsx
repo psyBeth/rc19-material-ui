@@ -44,6 +44,10 @@ const TypoButtons = () => {
                 </div>
             </Box>
 
+            <Typography variant='h2' align='center' mt={4} color={"purnavy.main"}>
+                BUTTONS
+            </Typography>
+
             <Stack 
                 direction={"row"} 
                 mt={4} 
